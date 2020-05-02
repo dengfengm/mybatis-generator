@@ -14,7 +14,7 @@
         </plugin>
 
         <jdbcConnection driverClass="com.mysql.jdbc.Driver"
-                        connectionURL="jdbc:mysql://localhost:3306/springboot"
+                        connectionURL="jdbc:mysql://localhost:3306/wshop"
                         userId="springboot"
                         password="springboot">
         </jdbcConnection>
@@ -29,8 +29,18 @@
         <javaClientGenerator targetPackage="com.dengfeng.mapper" targetProject="src/main/java" type="XMLMAPPER"/>
 
         <!-- 数据库表 -->
-		<table tableName="user"></table>
-		<table tableName="role"></table>
+        <table tableName="carousel"></table>
+        <table tableName="category"></table>
+        <table tableName="items"></table>
+        <table tableName="items_comments"></table>
+        <table tableName="items_img"></table>
+        <table tableName="items_param"></table>
+        <table tableName="items_spec"></table>
+        <table tableName="order_items"></table>
+        <table tableName="order_status"></table>
+        <table tableName="orders"></table>
+        <table tableName="user_address"></table>
+        <table tableName="users"></table>
 
     </context>
 </generatorConfiguration>
